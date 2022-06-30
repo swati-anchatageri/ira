@@ -8,8 +8,10 @@ import {
   CardBody,
   ListGroup,
   ListGroupItem,
-  Button
+  Button,
+  CardFooter
 } from "shards-react";
+import GoogleMap from "./GoogleMap";
 
 const SidebarActions = ({ title }) => (
   <Card small className="mb-3">
@@ -18,14 +20,18 @@ const SidebarActions = ({ title }) => (
     </CardHeader>
 
     <CardBody className="p-0">
+    <GoogleMap />
       <ListGroup flush>
         <ListGroupItem className="p-3">
-          <span className="d-flex mb-2">
+        
+        
+          {/* <span className="d-flex mb-2">
             <i className="material-icons mr-1">flag</i>
             <strong className="mr-1">Status:</strong> Draft{" "}
             <a className="ml-auto" href="#">
               Edit
             </a>
+
           </span>
           <span className="d-flex mb-2">
             <i className="material-icons mr-1">visibility</i>
@@ -47,17 +53,25 @@ const SidebarActions = ({ title }) => (
             <strong className="mr-1">Readability:</strong>{" "}
             <strong className="text-warning">Ok</strong>
           </span>
-        </ListGroupItem>
-        <ListGroupItem className="d-flex px-3 border-0">
-          <Button outline theme="accent" size="sm">
-            <i className="material-icons">save</i> Save Draft
-          </Button>
-          <Button theme="accent" size="sm" className="ml-auto">
-            <i className="material-icons">file_copy</i> Publish
-          </Button>
+        </ListGroupItem> */}
+        {/* <ListGroupItem className="d-flex px-3 border-0"> */}
+
         </ListGroupItem>
       </ListGroup>
     </CardBody>
+
+    
+        <CardFooter className="cardItem">
+          <Button outline theme="accent" size="sm">
+            <i className="material-icons">save</i>Save
+          </Button>
+          </CardFooter>
+          {/* <Button theme="accent" size="sm" className="ml-auto">
+            <i className="material-icons">file_copy</i> Publish
+          </Button> */}
+
+
+       
   </Card>
 );
 
@@ -69,7 +83,7 @@ SidebarActions.propTypes = {
 };
 
 SidebarActions.defaultProps = {
-  title: "Actions"
+  title: "Location"
 };
 
 export default SidebarActions;

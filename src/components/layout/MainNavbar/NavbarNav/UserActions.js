@@ -34,13 +34,13 @@ export default class UserActions extends React.Component {
           <img
 			classNameDefault={" "/*className="user-avatar rounded-circle mr-2"*/}
 			className="user-avatar rounded-circle mr-2"
-            src={/*require("./../../../../images/avatars/0.jpg")*/require("./../../../../images/avatars/server-sync.svg")}
+            src={require("./../../../../images/avatars/profile.png")/*require("./../../../../images/avatars/server-sync.svg")*/}
             alt="User Avatar"
           />{" "}
-          <span className="d-none d-md-inline-block">Database</span>
+          <span className="d-none d-md-inline-block"></span>
         </DropdownToggle>
         <Collapse tag={DropdownMenu} right small open={this.state.visible}>
-          <DropdownItem tag={Link} to="user-profile">
+          {/* <DropdownItem tag={Link} to="user-profile">
             <i className="material-icons">&#xE7FD;</i> Profile
           </DropdownItem>
           <DropdownItem tag={Link} to="edit-user-profile">
@@ -51,8 +51,8 @@ export default class UserActions extends React.Component {
           </DropdownItem>
           <DropdownItem tag={Link} to="transaction-history">
             <i className="material-icons">&#xE896;</i> Transactions
-          </DropdownItem>
-          <DropdownItem divider />
+          </DropdownItem> */}
+          {/* <DropdownItem divider /> */}
           <DropdownItem tag={Link} to="/" className="text-danger">
             <i className="material-icons text-danger">&#xE879;</i> Logout
           </DropdownItem>

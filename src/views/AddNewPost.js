@@ -3,6 +3,7 @@ import { Container, Row, Col } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
 import Editor from "../components/add-new-post/Editor";
+import Location from "../components/add-new-post/Location";
 import SidebarActions from "../components/add-new-post/SidebarActions";
 import SidebarCategories from "../components/add-new-post/SidebarCategories";
 
@@ -17,11 +18,15 @@ const AddNewPost = () => (
       {/* Editor */}
       <Col lg="9" md="12">
         <Editor />
+        <Location />
       </Col>
 
       {/* Sidebar Widgets */}
       <Col lg="3" md="12">
         <SidebarActions />
+        <br />
+        <br />
+        <br />
         <SidebarCategories />
       </Col>
     </Row>

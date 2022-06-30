@@ -13,14 +13,20 @@ import Errors from './views/Errors';
 import ComponentsOverview from './views/ComponentsOverview';
 import Tables from './views/Tables';
 import BlogPosts from './views/BlogPosts';
+//import Login from "./container/Login"
 
 export default [
   {
     path: '/',
     exact: true,
     layout: DefaultLayout,
-    component: () => <Redirect to="/data-health" />,
+    component: () => <Redirect to="/blog-posts" />,
   },
+  // {
+  //   path:'/Login',
+  //   layout: DefaultLayout,
+  //   element: Login,
+  // },
   {
     path: '/data-health',
     layout: DefaultLayout,

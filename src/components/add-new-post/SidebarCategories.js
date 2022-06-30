@@ -14,27 +14,30 @@ import {
 } from "shards-react";
 
 const SidebarCategories = ({ title }) => (
-  <Card small className="mb-3">
+  <Card small className="mb-3" margin-Buttom="90">
     <CardHeader className="border-bottom">
       <h6 className="m-0">{title}</h6>
     </CardHeader>
     <CardBody className="p-0">
       <ListGroup flush>
         <ListGroupItem className="px-3 pb-2">
-          <FormCheckbox className="mb-1" value="uncategorized" defaultChecked>
-            Uncategorized
+          <FormCheckbox className="mb-1" value="south indian">
+            South Indian
           </FormCheckbox>
-          <FormCheckbox className="mb-1" value="design" defaultChecked>
-            Design
+          <FormCheckbox className="mb-1" value="dnorth indiann">
+            North Indian
           </FormCheckbox>
-          <FormCheckbox className="mb-1" value="development">
-            Development
+          <FormCheckbox className="mb-1" value="ditaliant">
+            Italian
           </FormCheckbox>
-          <FormCheckbox className="mb-1" value="writing">
-            Writing
+          <FormCheckbox className="mb-1" value="chinese">
+            Chinese
           </FormCheckbox>
-          <FormCheckbox className="mb-1" value="books">
-            Books
+          <FormCheckbox className="mb-1" value="arabian">
+            Arabian
+          </FormCheckbox>
+          <FormCheckbox className="mb-1" value="mexican">
+            Mexican
           </FormCheckbox>
         </ListGroupItem>
 
@@ -46,9 +49,14 @@ const SidebarCategories = ({ title }) => (
                 <i className="material-icons">add</i>
               </Button>
             </InputGroupAddon>
+            
           </InputGroup>
         </ListGroupItem>
+        <Button outline theme="accent" size="sm">
+            <i className="material-icons">save</i>Save
+          </Button>
       </ListGroup>
+      
     </CardBody>
   </Card>
 );
