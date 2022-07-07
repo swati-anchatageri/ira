@@ -13,6 +13,8 @@ import Errors from './views/Errors';
 import ComponentsOverview from './views/ComponentsOverview';
 import Tables from './views/Tables';
 import BlogPosts from './views/BlogPosts';
+import Discussions from './components/blog/Discussions';
+import NewQuesion from './components/blog/NewDraft'
 //import Login from "./container/Login"
 
 export default [
@@ -36,6 +38,16 @@ export default [
     path: '/blog-overview',
     layout: DefaultLayout,
     component: BlogOverview,
+  },
+  {
+    path:'/new-draft',
+    layout: DefaultLayout,
+    component: NewQuesion,
+  },
+  {
+    path: '/discussions',
+    layout: DefaultLayout,
+    component: Discussions,
   },
   {
     path: '/user-profile-lite',

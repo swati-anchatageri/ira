@@ -11,36 +11,106 @@ import {
   Col
 } from "shards-react";
 
-const Discussions = ({ title, discussions }) => (
+class Discussions extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      loc:"/new-draft",
+      forumQuestion: [
+        {
+        title:"What are the best food for summer?",
+        createdAt: "2022-07-10",
+        description: "Test Description",
+        comments: [
+          {
+            user: {
+              id: 1,
+              name: "Tom"
+            },
+            comment: "This is a test comment"
+          }
+        ]
+      },
+      {
+        title: "Forum Question",
+        createdAt: "2022-07-10",
+        description: "Test Description",
+        comments: [
+          {
+            user: {
+              id: 2,
+              name: "Tom"
+            },
+            comment: "This is a test comment"
+          }
+        ]
+      },
+      {
+        title: "Forum Question",
+        createdAt: "2022-07-10",
+        description: "Test Description",
+        comments: [
+          {
+            user: {
+              id: 3,
+              name: "Tom"
+            },
+            comment: "This is a test comment"
+          }
+        ]
+      },
+      {
+        title: "Forum Question",
+        createdAt: "2022-07-10",
+        description: "Test Description",
+        comments: [
+          {
+            user: {
+              id: 4,
+              name: "Tom"
+            },
+            comment: "This is a test comment"
+          }
+        ]
+      }
+      
+      ]
+    }
+    }
+render(){
+  const {forumQuestion,loc} = this.state
+  return(
+    <>
   <Card small className="blog-comments">
     <CardHeader className="border-bottom">
-      <h6 className="m-0">{title}</h6>
+      <h6 className="m-0">forumQuestion</h6>
     </CardHeader>
 
     <CardBody className="p-0">
-      {discussions.map((discussion, idx) => (
+    
+      {forumQuestion.map((fmQue, idx) => (
         <div key={idx} className="blog-comments__item d-flex p-3">
           {/* Avatar */}
           <div className="blog-comments__avatar mr-3">
-            <img src={discussion.author.image} alt={discussion.author.name} />
+           {/* <img src={fmQue.author.image} alt={fmQue.author.name} /> */}
           </div>
 
           {/* Content */}
           <div className="blog-comments__content">
             {/* Content :: Title */}
             <div className="blog-comments__meta text-mutes">
-              <a className="text-secondary" href={discussion.author.url}>
-                {discussion.author.name}
+              <a className="text-secondary" href={fmQue.title}>
+                {fmQue.title}
               </a>{" "}
-              on{" "}
-              <a className="text-secondary" href={discussion.post.url}>
-                {discussion.post.title}
-              </a>
-              <span className="text-mutes">- {discussion.date}</span>
+              {/* on{" "}
+              <a className="text-secondary" href={fmQue.title}>
+                {fmQue.title}
+              </a> */}
+              <span className="text-mutes">- {fmQue.createdAt}</span>
             </div>
 
             {/* Content :: Body */}
-            <p className="m-0 my-1 mb-2 text-muted">{discussion.body}</p>
+            <p className="m-0 my-1 mb-2 text-muted">{fmQue.description}</p>
 
             {/* Content :: Actions */}
             <div className="blog-comments__actions">
@@ -51,17 +121,18 @@ const Discussions = ({ title, discussions }) => (
                   </span>{" "}
                   Approve
                 </Button>
-                <Button theme="white">
+                {/* <Button theme="white">
                   <span className="text-danger">
                     <i className="material-icons">clear</i>
                   </span>{" "}
                   Reject
-                </Button>
+                </Button> */}
                 <Button theme="white">
                   <span className="text-light">
-                    <i className="material-icons">more_vert</i>
+                   <i className="material-icons">more_vert</i>
+                   
                   </span>{" "}
-                  Edit
+                  <a href={loc}> Edit</a> 
                 </Button>
               </ButtonGroup>
             </div>
@@ -80,7 +151,13 @@ const Discussions = ({ title, discussions }) => (
       </Row>
     </CardFooter>
   </Card>
-);
+
+    </>
+  )
+}
+  }
+
+
 
 Discussions.propTypes = {
   /**
@@ -94,51 +171,53 @@ Discussions.propTypes = {
 };
 
 Discussions.defaultProps = {
-  title: "Discussions",
-  discussions: [
-    {
-      id: 1,
-      date: "3 days ago",
-      author: {
-        image: require("../../images/avatars/1.jpg"),
-        name: "John Doe",
-        url: "#"
-      },
-      post: {
-        title: "Hello World!",
-        url: "#"
-      },
-      body: "Well, the way they make shows is, they make one show ..."
-    },
-    {
-      id: 2,
-      date: "4 days ago",
-      author: {
-        image: require("../../images/avatars/2.jpg"),
-        name: "John Doe",
-        url: "#"
-      },
-      post: {
-        title: "Hello World!",
-        url: "#"
-      },
-      body: "After the avalanche, it took us a week to climb out. Now..."
-    },
-    {
-      id: 3,
-      date: "5 days ago",
-      author: {
-        image: require("../../images/avatars/3.jpg"),
-        name: "John Doe",
-        url: "#"
-      },
-      post: {
-        title: "Hello World!",
-        url: "#"
-      },
-      body: "My money's in that office, right? If she start giving me..."
-    }
-  ]
+  title: "Forum Questions",
+  // forumQuesion: [
+  //   {
+  //   "title": "Forum Question",
+  //   "createdAt": "2022-07-10",
+  //   "description": "<p>Test Description<p>",
+  //   "comments": [
+  //     {
+  //       "user": {
+  //         "id": 1,
+  //         "name": "Tom"
+  //       },
+  //       "comment": "This is a test comment"
+  //     }
+  //   }
+  
+
+
+  //   {
+  //     id: 2,
+  //     date: "4 days ago",
+  //     author: {
+  //       image: require("../../images/avatars/2.jpg"),
+  //       name: "John Doe",
+  //       url: "#"
+  //     },
+  //     post: {
+  //       title: "Hello World!",
+  //       url: "#"
+  //     },
+  //     body: "After the avalanche, it took us a week to climb out. Now..."
+  //   },
+  //   {
+  //     id: 3,
+  //     date: "5 days ago",
+  //     author: {
+  //       image: require("../../images/avatars/3.jpg"),
+  //       name: "John Doe",
+  //       url: "#"
+  //     },
+  //     post: {
+  //       title: "Hello World!",
+  //       url: "#"
+  //     },
+  //     body: "My money's in that office, right? If she start giving me..."
+  //   }
+  // ]
 };
 
 export default Discussions;

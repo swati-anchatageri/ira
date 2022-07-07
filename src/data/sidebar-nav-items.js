@@ -21,12 +21,12 @@ export default function() {
       title: "Add New Post",
       htmlBefore: '<i class="material-icons">note_add</i>',
       to: "/add-new-post",
-    }
-    // {
-    //   title: "Forms & Components",
-    //   htmlBefore: '<i class="material-icons">view_module</i>',
-    //   to: "/components-overview",
-    // },
+    },
+    {
+      title: "Forum Questions",
+      htmlBefore: '<i class="material-icons">view_module</i>',
+      to: "/discussions",
+    },
     // {
     //   title: "Tables",
     //   htmlBefore: '<i class="material-icons">table_chart</i>',

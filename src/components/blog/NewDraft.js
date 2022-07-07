@@ -10,46 +10,92 @@ import {
   FormTextarea,
   Button
 } from "shards-react";
+import Swal from "sweetalert2";
 
-const NewDraft = ({ title }) => (
-  <Card small className="h-100">
+
+class NewForumQuesion extends React.Component{
+  constructor(props){
+    super(props)
+      this.state={
+        fmQue:" ",
+        fmDesc:" "
+        
+      }
+  }
+  addForumQuestion = () => {
+    console.log(this.state.fmQue)
+    console.log(this.state.fmDesc)
+    let temp = this.state.fmQue
+    let temp2 = this.state.fmDesc
+    this.setState({
+      fmQue: temp,
+      fmDesc: temp2
+    })
+  }
+
+  message = () =>{
+    let payload = {
+      fmQue: this.state.fmQue,
+      fmDesc: this.state.fmDesc
+     
+    }
+  
+    console.log(payload)
+    Swal.fire({
+      icon:'success',
+      title:'Success',
+      text:'Successfully added new Forum Question',
+      // footer:'<button>Ok</button>'
+    })
+  }
+
+  render(){
+   // const [fmQue,fmDesc]=this.state
+    return(
+      <>
+        <Card small className="h-100">
     {/* Card Header */}
     <CardHeader className="border-bottom">
-      <h6 className="m-0">{title}</h6>
+      <h6 className="m-0">Add New Forum Question</h6>
     </CardHeader>
 
     <CardBody className="d-flex flex-column">
       <Form className="quick-post-form">
         {/* Title */}
         <FormGroup>
-          <FormInput placeholder="Brave New World" />
+          <FormInput /*value={fmQue} onChange={(event)=> this.setState({fmQue: event.target.value})} */placeholder="Forum Question" />
         </FormGroup>
 
         {/* Body */}
         <FormGroup>
-          <FormTextarea placeholder="Words can be like X-rays if you use them properly..." />
+          <FormTextarea maxlength="100"  placeholder="Description" /*value={fmDesc} onChange={(event)=> this.setState({fmDesc: event.target.value})}*//>
         </FormGroup>
 
         {/* Create Draft */}
         <FormGroup className="mb-0">
-          <Button theme="accent" type="submit">
-            Create Draft
+          <Button theme="accent" type="submit" onClick={this.message}>
+            Add Question
           </Button>
         </FormGroup>
       </Form>
     </CardBody>
   </Card>
-);
+      </>
+    )
+  }
+} 
+  
 
-NewDraft.propTypes = {
+
+NewForumQuesion.propTypes = {
   /**
    * The component's title.
    */
   title: PropTypes.string
 };
 
-NewDraft.defaultProps = {
-  title: "New Draft"
+NewForumQuesion.defaultProps = {
+  title: "Add New Forum Question"
 };
 
-export default NewDraft;
+export default NewForumQuesion;
