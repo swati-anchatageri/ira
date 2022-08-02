@@ -3,11 +3,31 @@ import { Container, Row, Col } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
 import Editor from "../components/add-new-post/Editor";
-import Location from "../components/add-new-post/Location";
+//import Location from "../components/add-new-post/Location";
 import SidebarActions from "../components/add-new-post/SidebarActions";
 import SidebarCategories from "../components/add-new-post/SidebarCategories";
 
-const AddNewPost = () => (
+class AddNewPost extends React.Component{
+  // useState
+  // useEffects to pass from parent to child
+  // all functions will be constant
+  constructor(props){
+    super(props);
+    this.state={
+      editor:{
+        title:"Parent Title",
+        description:"Parent Description",
+        location:"Parent Location"
+      }
+    }
+  }
+
+  handleCallback = (value) => {
+    console.log(value)
+  }
+
+render(){
+ return (
   <Container fluid className="main-content-container px-4 pb-4">
     {/* Page Header */}
     <Row noGutters className="page-header py-4">
@@ -17,8 +37,8 @@ const AddNewPost = () => (
     <Row>
       {/* Editor */}
       <Col lg="9" md="12">
-        <Editor />
-        <Location />
+        <Editor parentToChild={"From Parent"} passJson={this.state.editor} parentCallback = {this.handleCallback} childToParent={"from Child"} />
+        {/* <Location /> */}
       </Col>
 
       {/* Sidebar Widgets */}
@@ -33,4 +53,6 @@ const AddNewPost = () => (
   </Container>
 );
 
+}
+}
 export default AddNewPost;

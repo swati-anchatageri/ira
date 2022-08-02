@@ -35,7 +35,7 @@ export default class UserActions extends React.Component {
 			classNameDefault={" "/*className="user-avatar rounded-circle mr-2"*/}
 			className="user-avatar rounded-circle mr-2"
             src={require("./../../../../images/avatars/profile.png")/*require("./../../../../images/avatars/server-sync.svg")*/}
-            alt="User Avatar"
+            alt=""
           />{" "}
           <span className="d-none d-md-inline-block"></span>
         </DropdownToggle>

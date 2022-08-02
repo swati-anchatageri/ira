@@ -10,7 +10,6 @@ const PageTitle = ({ title, subtitle, className, ...attrs }) => {
     "text-md-left",
     "mb-sm-0"
   );
-
   return (
     <Col xs="12" sm="4" className={classes} { ...attrs }>
       <span className="text-uppercase page-subtitle">{subtitle}</span>

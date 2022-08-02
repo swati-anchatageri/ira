@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import {
   Card,
   CardHeader,
-  Button,
+  //Button,
   ListGroup,
   ListGroupItem,
-  Progress
+  //Progress
 } from "shards-react";
 
 const UserDetails = ({ userDetails }) => (
@@ -21,10 +21,6 @@ const UserDetails = ({ userDetails }) => (
         />
       </div>
       <h4 className="mb-0">{userDetails.name}</h4>
-      <span className="text-muted d-block mb-2">{userDetails.jobTitle}</span>
-      <Button pill outline size="sm" className="mb-2">
-        <i className="material-icons mr-1">person_add</i> Follow
-      </Button>
     </CardHeader>
     <ListGroup flush>
       <ListGroupItem className="px-4">
@@ -32,14 +28,6 @@ const UserDetails = ({ userDetails }) => (
           <strong className="text-muted d-block mb-2">
             {userDetails.performanceReportTitle}
           </strong>
-          <Progress
-            className="progress-sm"
-            value={userDetails.performanceReportValue}
-          >
-            <span className="progress-value">
-              {userDetails.performanceReportValue}%
-            </span>
-          </Progress>
         </div>
       </ListGroupItem>
       <ListGroupItem className="p-4">
@@ -61,14 +49,11 @@ UserDetails.propTypes = {
 
 UserDetails.defaultProps = {
   userDetails: {
-    name: "Sierra Brooks",
+    name: "Swati Anchatageri",
     avatar: require("./../../images/avatars/0.jpg"),
-    jobTitle: "Project Manager",
-    performanceReportTitle: "Workload",
-    performanceReportValue: 74,
     metaTitle: "Description",
     metaValue:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eaque, quidem, commodi soluta qui quae minima obcaecati quod dolorum sint alias, possimus illum assumenda eligendi cumque?"
+      "I know that certain foods can helps to lose weight and lower risk for disease. Discovering my  path to better health and nutrition. it is necessary to know certain nutrients, vitamins, and minerals naturally found in food can improve our health and help us live a long, active life."
   }
 };
 

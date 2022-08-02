@@ -1,0 +1,40 @@
+{
+    "shorts":[
+        {
+            "title":"sample title",
+            "img":"https://www.freepnglogos.com/uploads/food-png/food-menu-the-portsmouth-brewery-36.png",
+            "description":"this is sasmple description of inshort of food"
+
+        },
+        {
+            "title":"sample title",
+            "img":"https://media.istockphoto.com/photos/spicy-barbecued-chicken-tikka-boti-on-skewers-served-in-a-plate-with-picture-id1081828956?k=20&m=1081828956&s=612x612&w=0&h=IAREgaxB3P3WOUbQfcb_Uzh5Qe194dvSI36XbQWkgfw=",
+            "description":"this is sasmple description of inshort of food"
+
+        },
+        {
+            "title":"sample title",
+            "img":"https://www.kindpng.com/picc/m/372-3720372_food-item-picture-breakfast-cereal-hd-png-download.png",
+            "description":"this is sasmple description of inshort of food"
+
+        },
+        {
+            "title":"sample title",
+            "img":"https://c8.alamy.com/comp/2F6NYCM/kerala-breakfast-wheat-puttuhealthy-steamed-food-which-is-the-main-breakfast-item-of-south-indian-made-using-wheat-flour-2F6NYCM.jpg",
+            "description":"this is sasmple description of inshort of food"
+
+        },
+        {
+            "title":"sample title",
+            "img":"https://thumbs.dreamstime.com/b/chinese-food-7881413.jpg",
+            "description":"this is sasmple description of inshort of food"
+
+        },
+        {
+            "title":"sample title",
+            "img":"https://www.eatright.org/-/media/eatrightimages/health/wellness/heartandcardiovascularhealth/love-your-heart-973457334.jpg",
+            "description":"this is sasmple description of inshort of food"
+
+        }
+    ]
+}

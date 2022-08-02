@@ -1,0 +1,104 @@
+{
+    "ingredients":[
+        {
+            "id":1,
+            "title":"Paneer",
+            "img":"https://1.bp.blogspot.com/-_8ZSh3x4flM/XYfpTvK9P8I/AAAAAAAAPCE/2Q-4ckD1wB4AYQGL9fJBLkbi5WgvSDPFQCEwYBhgL/s1600/Homemade%2BMalai%2BPaneer.JPG",
+            "cat":"success",
+            "category":"Dairy",
+            "calory":"296 Kcal",
+            "fat": "26.9 g",
+            "sfat": "18.1 g",
+            "cholesterol": "56.2 mg",
+            "carbs":  "6.1 g",
+            "protein": "19.1 g",
+            "calcium": "420 mg",
+            "iron":"2.16 mg"
+                
+                    
+            
+        },
+        {
+            "id":2,
+            "title":"Bread",
+            "img":"https://kristineskitchenblog.com/wp-content/uploads/2014/08/whole-wheat-bread-1200-square-2678.jpg",
+            "time":30,
+            "cat":"success",
+            "category":"Bakery",
+            "calory":"243 Kcal",
+            "fat": "0.50 g",
+            "sfat": "0.12 g",
+            "cholesterol": "0 mg",
+            "protein": "8.40 g",
+            "calcium": "80 mg",
+            "iron":"1 mg",
+            "carbs":  "51.10 g"
+            
+        },
+        {
+            "id":3,
+            "title":"Oats",
+            "img":"https://c.ndtvimg.com/2019-05/deio1v2_oats_625x300_24_May_19.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+            "time":30,
+            "cat":"success",
+            "category":"Grains",
+            "calory":"390 Kcal",
+            "fat": "6 g",
+            "sfat": "1.21 g",
+            "cholesterol": "0 mg",
+            "protein": "17 g",
+            "calcium": "54 mg",
+            "iron":"4.72 mg",
+            "carbs":  "66 g"
+        },
+        {
+            "id":4,
+            "title":"Mango",
+            "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Carabao_mangoes_%28Philippines%29.jpg/1200px-Carabao_mangoes_%28Philippines%29.jpg",
+            "time":25,
+            "cat":"success",
+            "category":"Fruits",
+            "calory":"60 Kcal",
+            "fat": "0.38 g",
+            "sfat": " 0.092g",
+            "cholesterol": "0 mg",
+            "protein": "0.82 g",
+            "calcium": "14 mg",
+            "iron":"1.3 mg",
+            "carbs":  "14.98 g"
+        },
+        {
+            "id":5,
+            "title":"Mushrooms",
+            "img":"https://images.immediate.co.uk/production/volatile/sites/30/2020/08/health-benefits-of-mushrooms-guide-700-350-349bded.jpg",
+            "time":30,
+            "cat":"success",
+            "category":"Vegitables",
+            "calory":"31 Kcal",
+            "fat": "0.57 g",
+            "sfat": "1 g",
+            "cholesterol": "0 mg",
+            "protein": "3.12 g",
+            "calcium": "43 mg",
+            "iron":"12.18 mg",
+            "carbs":  "5.10 g"
+        },
+        {
+            "id":6,
+            "title":"Chicken",
+            "img":"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F23%2F2022%2F05%2F18%2Fhow-to-handle-raw-chicken-2000.jpg&q=60",
+            "time":15,
+            "cat":"success",
+            "category":"Meat",
+            "calory":"110 Kcal",
+            "fat": "2 g",
+            "sfat": "1.2 g",
+            "cholesterol": "63 mg",
+            "protein": "20.1 g",
+            "calcium": "0.01 mg",
+            "iron":"0.06 mg",
+            "carbs":  "2.9 g"
+        }
+               
+    ]
+}

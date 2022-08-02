@@ -11,7 +11,7 @@ import {
   FormGroup,
   FormInput,
   FormSelect,
-  FormTextarea,
+  //FormTextarea,
   Button
 } from "shards-react";
 
@@ -32,7 +32,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feFirstName"
                     placeholder="First Name"
-                    value="Sierra"
+                    value="Swati"
                     onChange={() => {}}
                   />
                 </Col>
@@ -42,7 +42,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feLastName"
                     placeholder="Last Name"
-                    value="Brooks"
+                    value="Anchatageri"
                     onChange={() => {}}
                   />
                 </Col>
@@ -55,7 +55,7 @@ const UserAccountDetails = ({ title }) => (
                     type="email"
                     id="feEmail"
                     placeholder="Email Address"
-                    value="sierra@example.com"
+                    value="swatianchatageri129@gmail.com"
                     onChange={() => {}}
                     autoComplete="email"
                   />
@@ -67,7 +67,7 @@ const UserAccountDetails = ({ title }) => (
                     type="password"
                     id="fePassword"
                     placeholder="Password"
-                    value="EX@MPL#P@$$w0RD"
+                    value="P@ssw0rd"
                     onChange={() => {}}
                     autoComplete="current-password"
                   />
@@ -78,7 +78,7 @@ const UserAccountDetails = ({ title }) => (
                 <FormInput
                   id="feAddress"
                   placeholder="Address"
-                  value="1234 Main St."
+                  value="A K Colony  "
                   onChange={() => {}}
                 />
               </FormGroup>
@@ -89,6 +89,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feCity"
                     placeholder="City"
+                    value="Bangalore"
                     onChange={() => {}}
                   />
                 </Col>
@@ -97,7 +98,11 @@ const UserAccountDetails = ({ title }) => (
                   <label htmlFor="feInputState">State</label>
                   <FormSelect id="feInputState">
                     <option>Choose...</option>
-                    <option>...</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Tamilnadu</option>
+                    <option>Andra Pradesh</option>
+                    <option>Maharashtra</option>
                   </FormSelect>
                 </Col>
                 {/* Zip Code */}
@@ -106,16 +111,17 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feZipCode"
                     placeholder="Zip"
+                    value="560054"
                     onChange={() => {}}
                   />
                 </Col>
               </Row>
               <Row form>
                 {/* Description */}
-                <Col md="12" className="form-group">
+                {/* <Col md="12" className="form-group">
                   <label htmlFor="feDescription">Description</label>
                   <FormTextarea id="feDescription" rows="5" />
-                </Col>
+                </Col> */}
               </Row>
               <Button theme="accent">Update Account</Button>
             </Form>
